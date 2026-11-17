@@ -16,6 +16,8 @@ The program uses reference.txt, containing a 200-nucleotide reference sequence, 
 
 It returns dictionaries containing validation results, nucleotide mismatches, sample-level statistics and statistical comparisons. Printed outputs include mismatch percentages, substitution frequencies, the three most frequently mismatched positions and two-sided Welch's t-test results.
 
+The analysis found that 60.3% of valid reads from treated samples contained mismatches, compared with 8.3% in controls, demonstrating higher mismatch frequencies following genotoxic treatment.
+
 Code Design
 
 The program separates validation, mismatch detection and dataset analysis into individual functions (validate_read, find_mutations and analyse_reads). This allows each operation to be tested independently, rather than combining everything into one function.
